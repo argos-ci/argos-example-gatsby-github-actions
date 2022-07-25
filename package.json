@@ -12,11 +12,16 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "build-plugins": "cd plugins/argos-javascript && yarn build-plugins"
   },
   "dependencies": {
     "gatsby": "^4.19.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "argos-cli": "^0.3.3",
+    "puppeteer": "^15.5.0"
   }
 }
