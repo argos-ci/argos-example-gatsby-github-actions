@@ -18,5 +18,11 @@
     "gatsby": "^4.19.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "argos-cli": "^0.3.3",
+    "gatsby-plugin-argos": "^1.0.0",
+    "gatsby-plugin-screenshot": "^1.0.0",
+    "puppeteer": "^15.5.0"
   }
 }
