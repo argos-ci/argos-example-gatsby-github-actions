@@ -2,6 +2,9 @@ name: CI
 
 on: [push]
 
+env:
+  ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
+
 jobs:
   cypress-and-argos:
     runs-on: ubuntu-latest
@@ -16,6 +19,9 @@ jobs:
 
       - name: Install Gatsby CLI
         run: yarn add -D gatsby-cli
+
+      # - name: Build plugins
+      #   run: cd plugins/argos-javascript && yarn install --prefer-offline --frozen-lockfile && yarn build
 
       - name: Build
         run: yarn build

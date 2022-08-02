@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "babel-preset-gatsby-package": "^2.19.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.21.0",
+    "lerna": "^5.3.0",
+    "prettier": "^2.7.1"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production lerna run build",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint .",
+    "release": "yarn build && lerna publish --conventional-commits"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
